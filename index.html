@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swarnab Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <a href="#" class="logo">Swar<span style="color: blue">nab</span></a>
+
+        <nav class="navbar" id="sidemenu">
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#">Projects</a>
+          <a href="#">Contact</a>
+          <i class="bx bx-window-close" onclick="closemenu()"></i>
+        </nav>
+        <i class="bx bx-menu" onclick="openmenu()" style="font-size: 25px"></i>
+      </div>
+
+      <div class="header-content">
+        <h3 class="hello">Hello, Its Me</h3>
+        <h1>Swarnab Banerjee</h1>
+        <h3 class="desc">And I am a <span class="text"></span></h3>
+        <p>
+          I'm a skilled web developer and programmer, passionate about<br />
+          crafting elegant solutions. With expertise in coding and<br />
+          problem-solving, I create impactful websites and applications to
+          bring<br />
+          ideas to life.
+        </p>
+        <div class="home-sci">
+          <a href="https://www.facebook.com/swarnab.banerjee.52" target="_blank"
+            ><i class="bx bxl-meta"></i
+          ></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxl-github"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- about section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/about.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About <span style="color: #0ef">Me</span></h1>
+            <p class="about">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+              aliquid, facilis, illo voluptatibus consequatur possimus
+              praesentium excepturi, recusandae magni delectus commodi! At amet
+              omnis tempore ipsam. Maxime modi illo minima, dolore cumque
+              aspernatur doloremque!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li>
+                  <span>2021 - current</span><br />B Tech in ECE at IIT
+                  Kharagpur
+                </li>
+                <li>
+                  <span>2019 - 2021</span><br />Higher Secondary at Sheakhala
+                  Benimadhab High School
+                </li>
+                <li>
+                  <span>2017 - 2019</span><br />Secondary at Sheakhala
+                  Benimadhab High School
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>March, 2023 - current</span><br />Core Member at IEEE
+                  Student Branch AOT
+                </li>
+                <li>
+                  <span>August, 2023</span><br />Track Winner at InterHactive
+                  Hackathon organized by SC-CSE, AOT
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills section -->
+    <div class="skills_section" id="skills">
+      <div class="skills_head">
+        <h1>My <span>Skills</span></h1>
+      </div>
+
+      <div class="skills_main">
+        <div class="skill_bar">
+          <div class="info">
+            <p>HTML</p>
+            <p>90%</p>
+          </div>
+          <div class="bar">
+            <span class="html"></span>
+          </div>
+        </div>
+        <div class="skill_bar">
+          <div class="info">
+            <p>CSS</p>
+            <p>85%</p>
+          </div>
+          <div class="bar">
+            <span class="css"></span>
+          </div>
+        </div>
+        <div class="skill_bar">
+          <div class="info">
+            <p>SASS</p>
+            <p>80%</p>
+          </div>
+          <div class="bar">
+            <span class="sass"></span>
+          </div>
+        </div>
+        <div class="skill_bar">
+          <div class="info">
+            <p>Java Script</p>
+            <p>80%</p>
+          </div>
+          <div class="bar">
+            <span class="js"></span>
+          </div>
+        </div>
+        <div class="skill_bar">
+          <div class="info">
+            <p>React js</p>
+            <p>75%</p>
+          </div>
+          <div class="bar">
+            <span class="react"></span>
+          </div>
+        </div>
+        <div class="skill_bar">
+          <div class="info">
+            <p>Node js</p>
+            <p>70%</p>
+          </div>
+          <div class="bar">
+            <span class="node"></span>
+          </div>
+        </div>
+        <div class="skill_bar">
+          <div class="info">
+            <p>Express js</p>
+            <p>65%</p>
+          </div>
+          <div class="bar">
+            <span class="express"></span>
+          </div>
+        </div>
+        <div class="skill_bar">
+          <div class="info">
+            <p>Mongo DB</p>
+            <p>60%</p>
+          </div>
+          <div class="bar">
+            <span class="mongo"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio section -->
+    <div id="portfolio">
+      <h1 class="sub-title">My <span style="color: #0ef">Projects</span></h1>
+      <div class="container1">
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work1.png" alt="" />
+            <div class="layer">
+              <h1>GymLove</h1>
+              <p>
+                About This Website is developed for all Gym Enthusiasts . One
+                can search for an particular muscle, and he will be redirected
+                to the details page of that particular website . He can learn
+                about that exercise , all the details , steps and related
+                YouTube Tutorials . User can also get similar exercises and
+                exercises with same equipments
+              </p>
+              <div class="links">
+                <a href="#"><i class="bx bx-link-external"></i></a>
+                <a href="#"><i class="bx bx-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work2.png" alt="" />
+            <div class="layer">
+              <h1>To Do App</h1>
+              <p>
+                It is a To Do website made using React Js, User can add, edit
+                check, uncheck and delete To do. To see thw application click
+              </p>
+              <div class="links">
+                <a href="#"><i class="bx bx-link-external"></i></a>
+                <a href="#"><i class="bx bx-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work3.png" alt="" />
+            <div class="layer">
+              <h1>chat werApp</h1>
+              <p>full stack chatting application</p>
+              <div class="links">
+                <a href="#"><i class="bx bx-link-external"></i></a>
+                <a href="#"><i class="bx bx-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work4.png" alt="" />
+            <div class="layer">
+              <h1>GymLove</h1>
+              <p>
+                About This Website is developed for all Gym Enthusiasts . One
+                can search for an particular muscle, and he will be redirected
+                to the details page of that particular website . He can learn
+                about that exercise , all the details , steps and related
+                YouTube Tutorials . User can also get similar exercises and
+                exercises with same equipments
+              </p>
+              <div class="links">
+                <a href="#"><i class="bx bx-link-external"></i></a>
+                <a href="#"><i class="bx bx-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact <span style="color: #0ef">Me</span></h1>
+          <p><i class="bx bxs-envelope"></i>banerjeeswarnab66@gmail.com</p>
+          <p><i class="bx bxs-phone-call"></i>+91 7863903386</p>
+          <button class="btn btn-2">
+            <a href="./images/Swarnab Banerjee Resume.pdf" download
+              >Download CV</a
+            >
+          </button>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="Email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="Message"
+              placeholder="Your Message"
+              rows="6"
+            ></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Copyright @ Swaranb. Made with by ❤️ Swarnab Banerjee</p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
