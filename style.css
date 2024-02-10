@@ -391,8 +391,83 @@ body {
     width: 60%;
   }
 }
+.skill_bar .bar .DSA {
+  width: 75%;
+  animation: dsa 2s;
+}
+@keyframes dsa {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.skill_bar .bar .java {
+  width: 82%;
+  animation: java 2s;
+}
+@keyframes java {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 82%;
+  }
+}
+.skill_bar .bar .ps {
+  width: 85%;
+  animation: cpp 2s;
+}
+@keyframes cpp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+.skill_bar .bar .cpp {
+  width: 90%;
+  animation: cpp 2s;
+}
+@keyframes cpp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+.skill_bar .bar .iot {
+  width: 60%;
+  animation: iot 2s;
+}
+@keyframes iot {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+.skill_bar .bar .com {
+  width: 73%;
+  animation: com 2s;
+}
+@keyframes com {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 73%;
+  }
+}
 
 @media screen and (max-width: 768px) {
+  #skills {
+    margin-top: 100px;
+  }
   .skills_main {
     grid-template-columns: 1fr; /* Set a single column layout for smaller screens */
   }
@@ -404,6 +479,7 @@ body {
 /* Projects */
 #portfolio {
   padding: 50px 0;
+  margin-top: auto;
 }
 .sub-title {
   text-align: center;
@@ -485,6 +561,9 @@ body {
 @media (max-width: 768px) {
   .work-list {
     grid-template-columns: 1fr; /* Set to one column for smaller screens */
+  }
+  #portfolio {
+    margin-top: 300px;
   }
 }
 
@@ -621,6 +700,10 @@ form textarea::placeholder {
 }
 
 @media only screen and (max-width: 600px) {
+  #contact {
+    margin-top: 100px;
+  }
+
   .container .bx {
     display: block;
     font-size: 25px;
