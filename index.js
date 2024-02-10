@@ -30,3 +30,14 @@ function openmenu() {
 function closemenu() {
   menu.style.right = "-150px";
 }
+
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbzbGdg3A3aUZUb2BnGburRTo416OEelgBmoiM_Qo4NmpHzP1s9J4tt09pnBLjGAWjvT/exec";
+const form = document.forms["submit-to-google-sheet"];
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => console.log("Success!", response))
+    .catch((error) => console.error("Error!", error.message));
+});
